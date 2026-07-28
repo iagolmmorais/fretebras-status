@@ -29,14 +29,31 @@
   .table-wrap { overflow-x: auto; border: 1px solid rgba(127,127,127,.25); border-radius: 10px; }
   table { border-collapse: collapse; width: 100%; font-size: .92rem; }
   th, td { text-align: left; padding: 8px 10px; white-space: nowrap; }
-  thead th { background: rgba(127,127,127,.1); position: sticky; top: 0; }
+  thead th { background: rgba(127,127,127,.1); position: sticky; top: 0; cursor: pointer; user-select: none; }
+  thead th:hover { background: rgba(127,127,127,.2); }
+  thead th.sorted-asc::after { content: " B2"; opacity: .6; }
+  thead th.sorted-desc::after { content: " BC"; opacity: .6; }
   tbody tr:nth-child(even) { background: rgba(127,127,127,.06); }
   td.produto, td.embarcador { white-space: normal; min-width: 160px; }
   td.contato { white-space: normal; min-width: 130px; font-size: .88rem; }
   tr.atraente { background: #fef9c3; }
   @media (prefers-color-scheme: dark) { tr.atraente { background: #422006; } }
-  td.observacao { white-space: normal; font-size: .85rem; opacity: .85; padding-top: 0; }
+  td.detalhes { white-space: normal; max-width: 260px; font-size: .85rem; opacity: .85; }
+  td.detalhes summary { cursor: pointer; opacity: .8; }
   .empty, .err-msg { padding: 10px 0; opacity: .8; }
   .footer-note { margin-top: 10px; font-size: .85rem; opacity: .7; }
+  .status-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .status-chip { border: 1px solid rgba(127,127,127,.25); border-radius: 8px; padding: 8px 12px; font-size: .88rem; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px;
+             position: sticky; top: 0; background: #f4f4f5; padding: 10px 0; z-index: 2; }
+  @media (prefers-color-scheme: dark) { .toolbar { background: #18181b; } }
+  .toolbar input[type="text"], .toolbar input[type="number"] {
+    padding: 7px 10px; border-radius: 8px; border: 1px solid rgba(127,127,127,.4);
+    background: transparent; color: inherit; font-size: .9rem;
+  }
+  .toolbar label { font-size: .88rem; display: flex; align-items: center; gap: 5px; }
+  .toolbar .count { font-size: .85rem; opacity: .7; margin-left: auto; }
+  tr.hidden-by-filter { display: none; }
+  .no-results { padding: 20px; text-align: center; opacity: .7; display: none; }
 </style></head><body>
-<header><h1>FreteBras &mdash; checagem de fretes</h1><div class="ts">Gerado em 28/07/2026 18:37 &middot; 3 frete(s) novo(s) no total</div></header><main><section class="vehicle"><h2>Veiculo 1<span class="badge new">novo</span></h2><div class="meta">origem: Betim &middot; 1 frete(s) novo(s)</div><div class="table-wrap"><table><thead><tr><th></th><th>ID</th><th>Origem</th><th>Destino</th><th>Valor</th><th>Peso</th><th>Produto</th><th>Embarcador</th><th>Contato</th></tr></thead><tbody><tr><td></td><td>70102582</td><td>Belo Horizonte, MG</td><td>Macaé, RJ</td><td>R$ 450,00</td><td>280 kg</td><td class="produto">Tenda tubular</td><td class="embarcador">EJ8 LOCACAO DE EQUIPAMENTOS, SERVICOS, E INDUSTRIA </td><td class="contato">-</td></tr></tbody></table></div><div class="footer-note">⭐ = frete atraente (R$/km, valor ou publicação recente). Abra o FreteBras para confirmar/negociar manualmente. Nenhum contato foi iniciado automaticamente (contato mostrado e so leitura).</div></section><section class="vehicle"><h2>Veiculo 2<span class="badge new">novo</span></h2><div class="meta">origem: Guarulhos &middot; 2 frete(s) novo(s)</div><div class="table-wrap"><table><thead><tr><th></th><th>ID</th><th>Origem</th><th>Destino</th><th>Valor</th><th>Peso</th><th>Produto</th><th>Embarcador</th><th>Contato</th></tr></thead><tbody><tr><td></td><td>70144456</td><td>São Paulo, SP</td><td>Belo Horizonte, MG</td><td>A combinar</td><td>200 kg</td><td class="produto">PILHA DE CADEIRAS</td><td class="embarcador">CLADU CONSULTORIA DE FRETES E PRAZOS</td><td class="contato">-</td></tr><tr><td></td><td>70133942</td><td>São Paulo, SP</td><td>Mangueirinha, PR</td><td>R$ 800,00</td><td>1300 kg</td><td class="produto">palleti</td><td class="embarcador">ALPHAJET TRANSPORTES </td><td class="contato">-</td></tr></tbody></table></div><div class="footer-note">⭐ = frete atraente (R$/km, valor ou publicação recente). Abra o FreteBras para confirmar/negociar manualmente. Nenhum contato foi iniciado automaticamente (contato mostrado e so leitura).</div></section></main></body></html>
+<header><h1>FreteBras &mdash; checagem de fretes</h1><div class="ts">Gerado em 28/07/2026 18:56 &middot; 0 frete(s) novo(s) no total</div></header><main><div class="status-strip"><div class="status-chip"><strong>Veiculo 1</strong> (Betim) &middot; <span class="badge err">falhou</span> Campo de origem nao encontrado</div><div class="status-chip"><strong>Veiculo 2</strong> (Guarulhos) &middot; <span class="badge zero">sem novos</span> 933 disponiveis, 4 apos exclusoes</div></div><div class="empty">Nenhum frete novo em nenhum veiculo nesta rodada.</div></main></body></html>
