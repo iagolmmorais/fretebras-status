@@ -1,4 +1,6 @@
 {
-  "status": "rodando",
-  "origens": {}
+  "status": "pausado",
+  "origens": {
+    "Veiculo 1": "Contagem"
+  }
 }
