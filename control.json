@@ -4,5 +4,17 @@
     "Veiculo 1": "Hortolandia",
     "Veiculo 2": "Guarulhos",
     "Veiculo 3": "betim"
+  },
+  "destinos": {
+    "Veiculo 1": [
+      "Minas Gerais"
+    ],
+    "Veiculo 2": [
+      "Sao Paulo"
+    ],
+    "Veiculo 3": [
+      "Minas Gerais",
+      "Sao Paulo"
+    ]
   }
 }
