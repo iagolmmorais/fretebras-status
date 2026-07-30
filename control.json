@@ -1,8 +1,8 @@
 {
-  "status": "parado",
+  "status": "rodando",
   "origens": {
     "Veiculo 1": "Betim",
-    "Veiculo 2": "",
+    "Veiculo 2": "Hortolândia",
     "Veiculo 3": ""
   }
 }
