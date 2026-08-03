@@ -2,8 +2,8 @@
   "status": "rodando",
   "origens": {
     "Veiculo 1": "Betim",
-    "Veiculo 2": "",
-    "Veiculo 3": ""
+    "Veiculo 2": "Guarulhos",
+    "Veiculo 3": "Curitiba"
   },
   "destinos": {
     "Veiculo 1": [
