@@ -7,8 +7,9 @@
   },
   "destinos": {
     "Veiculo 1": [
-      "Sudeste",
-      "Sul"
+      "Sul",
+      "Rio de Janeiro",
+      "Sao Paulo"
     ],
     "Veiculo 2": [
       "Sudeste",
