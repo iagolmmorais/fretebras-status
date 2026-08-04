@@ -2,20 +2,27 @@
   "status": "rodando",
   "origens": {
     "Veiculo 1": "Betim",
-    "Veiculo 2": "Guarulhos",
-    "Veiculo 3": "Curitiba"
+    "Veiculo 2": "Porto Real",
+    "Veiculo 3": "Siderópolis"
   },
   "destinos": {
     "Veiculo 1": [
       "Sudeste",
       "Sul"
     ],
-    "Veiculo 2": [
-      "Minas Gerais"
-    ],
+    "Veiculo 2": [],
     "Veiculo 3": [
-      "Minas Gerais",
-      "Sao Paulo"
+      "Sudeste",
+      "Sul"
     ]
+  },
+  "ufs": {
+    "Veiculo 2": "RJ",
+    "Veiculo 3": "SC"
+  },
+  "raios": {
+    "Veiculo 1": 50,
+    "Veiculo 2": 50,
+    "Veiculo 3": 50
   }
 }
