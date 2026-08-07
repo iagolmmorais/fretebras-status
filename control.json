@@ -2,7 +2,7 @@
   "status": "rodando",
   "origens": {
     "Veiculo 1": "Ribeirão Preto",
-    "Veiculo 2": "",
+    "Veiculo 2": "Betim",
     "Veiculo 3": ""
   },
   "destinos": {
@@ -20,7 +20,7 @@
     ]
   },
   "ufs": {
-    "Veiculo 2": "SC",
+    "Veiculo 2": "MG",
     "Veiculo 3": "SC",
     "Veiculo 1": "SP"
   },
