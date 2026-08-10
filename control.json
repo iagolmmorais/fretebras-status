@@ -3,7 +3,7 @@
   "origens": {
     "Veiculo 1": "São Paulo",
     "Veiculo 2": "Betim",
-    "Veiculo 3": ""
+    "Veiculo 3": "Curitiba"
   },
   "destinos": {
     "Veiculo 1": [
@@ -21,7 +21,7 @@
   },
   "ufs": {
     "Veiculo 2": "MG",
-    "Veiculo 3": "SC",
+    "Veiculo 3": "PR",
     "Veiculo 1": "SP"
   },
   "raios": {
